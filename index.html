@@ -1,244 +1,73 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EH RP Community</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-        background: linear-gradient(135deg, #0b0b14, #10101c);
-        color: white;
-    }
-
-    /* NAVBAR */
-    nav {
-        background: rgba(0,0,0,0.8);
-        position: sticky;
-        top: 0;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        backdrop-filter: blur(10px);
-        border-bottom: 2px solid #006eff;
-        z-index: 99;
-    }
-
-    nav a {
-        color: #00aaff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15px;
-        transition: 0.2s;
-    }
-    nav a:hover {
-        color: white;
-        text-shadow: 0 0 8px #00aaff;
-    }
-
-    /* HEADER */
-    header {
-        background: url('https://i.imgur.com/kw0T2SH.jpeg') center/cover no-repeat;
-        padding: 90px 20px;
-        text-align: center;
-        box-shadow: inset 0 0 2000px rgba(0,0,0,0.5);
-    }
-
-    header h1 {
-        font-size: 55px;
-        margin: 0;
-        text-shadow: 0 0 12px #000;
-    }
-
-    header h3 {
-        font-size: 22px;
-        text-shadow: 0 0 10px #000;
-    }
-
-    /* CONTAINER */
-    .container {
-        max-width: 1100px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    /* SECTIONS */
-    .section {
-        background: rgba(15,15,25,0.85);
-        padding: 30px;
-        margin: 40px 0;
-        border-left: 4px solid #0077ff;
-        border-radius: 12px;
-    }
-
-    .section h2 {
-        color: #009dff;
-        text-shadow: 0 0 10px #009dff;
-        margin-bottom: 20px;
-    }
-
-    /* CARDS */
-    .card {
-        background: rgba(30,30,45,0.85);
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 8px;
-        border: 1px solid #005599;
-        transition: 0.2s;
-    }
-
-    .card:hover {
-        transform: translateX(5px);
-        box-shadow: 0 0 15px #0099ff80;
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 10px 18px;
-        background: linear-gradient(90deg, #00a8ff, #0066ff);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 600;
-        transition: 0.2s;
-    }
-
-    .btn:hover {
-        transform: scale(1.05);
-        background: linear-gradient(90deg, #20c3ff, #0088ff);
-        box-shadow: 0 0 15px #00c6ffaa;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-        background: rgba(0,0,0,0.6);
-        border-top: 2px solid #0077ff;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novara RP - Regole In Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ecf0f1;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-left: 5px solid #2c3e50;
+            border-radius: 4px;
+        }
+        li.important {
+            border-left-color: #e74c3c;
+        }
+        li.optional {
+            border-left-color: #f39c12;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>Novara RP - Regole In Game</h1>
+    </header>
+    <main>
+        <p>Queste regole dovranno essere utilizzate in game, ci saranno le regole per ogni ruolo e situazione. <strong>ALCUNE di queste regole NON SONO OBBLIGATORIE</strong>, indicate con ⚠️. Se qualcuno non le rispetta, non è necessario aprire un ticket, ma potrebbero aiutare per un buon RP.</p>
 
-<!-- NAVBAR -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#departments">Dipartimenti</a>
-    <a href="#rules">Regolamento</a>
-    <a href="#shop">Shop</a>
-    <a href="#links">Link Roblox</a>
-</nav>
-
-<!-- HEADER -->
-<header id="home">
-    <h1>EH RP COMMUNITY</h1>
-    <h3>Roleplay avanzato - Emergency Hamburg / EH</h3>
-</header>
-
-<div class="container">
-
-<!-- DIPARTIMENTI -->
-<section class="section" id="departments">
-    <h2>🚓 Dipartimenti Ufficiali</h2>
-
-    <div class="card">
-        <h3>Polizia</h3>
-        <p>Gestione ordine pubblico, pattuglie, arresti, risposta rapida.</p>
-    </div>
-
-    <div class="card">
-        <h3>EMS - Soccorso Medico</h3>
-        <p>Risposta a feriti, incidenti, emergenze sanitarie.</p>
-    </div>
-
-    <div class="card">
-        <h3>Vigili del Fuoco</h3>
-        <p>Incendi, recuperi, estrazioni, emergenze complesse.</p>
-    </div>
-
-    <div class="card">
-        <h3>DOT</h3>
-        <p>Gestione traffico, rimozione veicoli, manutenzione strade.</p>
-    </div>
-</section>
-
-<!-- REGOLAMENTO -->
-<section class="section" id="rules">
-    <h2>📘 Regolamento Server</h2>
-
-    <div class="card"><strong>🚫 No RDM</strong> — Non uccidere senza motivo RP.</div>
-    <div class="card"><strong>🚫 No VDM</strong> — Non investire deliberatamente.</div>
-    <div class="card"><strong>🚫 No FailRP</strong> — Rispetta la logica del roleplay.</div>
-    <div class="card"><strong>⚠ Rispetta Staff</strong> — Le decisioni staff sono definitive.</div>
-    <div class="card"><strong>⚠Non Pingare i owner / co owner</strong> — Le decisioni staff sono definitive.</div>
-</section>
-
-<!-- SHOP -->
-<section class="section" id="shop">
-    <h2>🛒 Shop EH – Pacchetti & Case</h2>
-
-    <div class="card">
-        <h3>🏠 Pacchetto House</h3>
-        <p>Ottieni una proprietà personalizzata nel server.</p>
         <ul>
-            <li><strong>Casa:</strong> 5k</li>
-            <li><strong>Villa:</strong> 10k</li>
+            <li class="optional">⚠️ Le sirene non si dovranno usare quando non c'è bisogno</li>
+            <li class="optional">⚠️ Siete pregati di guidare bene e fare un buon RP</li>
+            <li class="optional">⚠️ Siate rispettosi con ognuno</li>
+            <li class="optional">🎵 Potrete mettere la VC con musica solo se non è fastidiosa. In scene RP o se lo staff chiede di togliere, eseguire</li>
+            <li class="important">🪖 I lavori come polizia, medico, ecc. si possono fare anche senza bando, ma rispettate sempre le regole RP</li>
+            <li class="important">🚩 È VIETATO usare stopsticks, fare posti di blocco non autorizzati, powergaming, FRP, RDM, cuff rush, teaser rush, autopromozione, VDM, crash</li>
         </ul>
-        <a class="btn" href="INSERISCI_LINK_PACCHETTO_HOUSE">Acquista</a>
-    </div>
-
-    <div class="card">
-        <h3>⭐ VIP EH</h3>
-        <p>Accesso a vantaggi e bonus esclusivi.</p>
-        <a class="btn" href="INSERISCI_LINK_VIP_EH">Acquista</a>
-    </div>
-
-    <div class="card">
-        <h3>🚗 Auto Speciali</h3>
-        <p>Veicoli unici dedicati al roleplay avanzato.</p>
-        <a class="btn" href="INSERISCI_LINK_AUTO_EH">Acquista</a>
-    </div>
-
-    <div class="card">
-        <h3>💰 Donazioni</h3>
-        <p>Sostieni il server e ottieni premi RP.</p>
-        <a class="btn" href="INSERISCI_LINK_DONAZIONE_EH">Dona</a>
-    </div>
-</section>
-
-<!-- LINK ROBLOX -->
-<section class="section" id="links">
-    <h2>🔗 Link Roblox</h2>
-
-    <div class="card">
-        <h3>Gioco EH</h3>
-        <a class="btn" href="INSERISCI_LINK_GIOCO_EH">Vai al gioco</a>
-    </div>
-
-    <div class="card">
-        <h3>Gruppo Roblox</h3>
-        <a class="btn" href="INSERISCI_LINK_GRUPPO_EH">Entra nel gruppo</a>
-    </div>
-
-    <div class="card">
-        <h3>Discord Ufficiale</h3>
-        <a class="btn" href=https://discord.gg/9wG3Nvc3>Unisciti su Discord</a>
-    </div>
-</section>
-
-</div>
-
-<footer>
-    © 2025 EH RP Community — Tutti i diritti riservati
-</footer>
-
+    </main>
 </body>
 </html>
+
 
