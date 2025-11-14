@@ -5,19 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Novara RP</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5;color:#333}
-header{background:#2c3e50;color:white;text-align:center;padding:20px}
-nav{background:#34495e;display:flex;justify-content:center}
-nav button{background:none;border:none;color:white;padding:12px 25px;cursor:pointer;font-size:16px}
-nav button:hover{background:#2c3e50}
-main{max-width:900px;margin:20px auto;background:white;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-section{display:none} section.active{display:block}
-h2{color:#2c3e50;margin-top:20px}
-ul{list-style:none;padding:0}
-li{margin:10px 0;padding:10px 15px;border-left:5px solid #2c3e50;border-radius:4px;background:#ecf0f1}
-li.important{border-left-color:#e74c3c}
-li.optional{border-left-color:#f39c12}
-.shop-item{display:flex;justify-content:space-between;align-items:center;font-weight:bold}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #333;
+}
+header{
+    background: rgba(44,62,80,0.9);
+    color:white;
+    text-align:center;
+    padding: 25px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+nav{
+    background: rgba(52,73,94,0.9);
+    display:flex;
+    justify-content:center;
+}
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    padding:15px 30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+nav button:hover{
+    background:#2c3e50;
+    border-radius:5px;
+}
+main{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+section{display:none;}
+section.active{display:block;}
+h2{color:#2c3e50;margin-top:20px;}
+ul{list-style:none;padding:0;}
+li{margin:12px 0;padding:12px 18px;border-left:6px solid #2c3e50;border-radius:6px;background:#f0f0f0;font-size:16px;}
+li.important{border-left-color:#e74c3c;font-weight:bold;}
+li.optional{border-left-color:#f39c12;}
+.shop-item{display:flex;justify-content:space-between;align-items:center;font-weight:bold;}
+.shop-item span{color:#2c3e50;}
 </style>
 </head>
 <body>
@@ -25,16 +61,19 @@ li.optional{border-left-color:#f39c12}
 <h1>Novara RP</h1>
 <p>Benvenuto sul sito ufficiale di Novara RP</p>
 </header>
+
 <nav>
 <button onclick="show('home')">Home</button>
 <button onclick="show('shop')">Shop</button>
 <button onclick="show('rules')">Regole</button>
 </nav>
+
 <main>
 <section id="home" class="active">
 <h2>🏠 Home</h2>
-<p>Benvenuto su Novara RP! Scopri shop, pacchetti e regole per un RP corretto e divertente.</p>
+<p>Benvenuto su <strong>Novara RP</strong>! Qui troverai tutto sul nostro server: shop, pacchetti e regole per un RP corretto e divertente.</p>
 </section>
+
 <section id="shop">
 <h2>🏪 Shop Pacchetti House</h2>
 <ul>
@@ -42,6 +81,7 @@ li.optional{border-left-color:#f39c12}
 <li class="shop-item">Villa: <span>10.000$</span></li>
 </ul>
 </section>
+
 <section id="rules">
 <h2>📜 Regole In Game</h2>
 <ul>
@@ -54,10 +94,11 @@ li.optional{border-left-color:#f39c12}
 </ul>
 </section>
 </main>
+
 <script>
 function show(id){
-document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
-document.getElementById(id).classList.add('active');
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
 }
 </script>
 </body>
