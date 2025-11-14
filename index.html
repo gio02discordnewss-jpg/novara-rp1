@@ -5,20 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Novara RP</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5;color:#333}
 header{background:#2c3e50;color:white;text-align:center;padding:20px}
 nav{background:#34495e;display:flex;justify-content:center}
-nav button{background:none;border:none;color:white;padding:10px 20px;cursor:pointer}
-main{max-width:800px;margin:20px auto;background:white;padding:20px;border-radius:8px}
+nav button{background:none;border:none;color:white;padding:12px 25px;cursor:pointer;font-size:16px}
+nav button:hover{background:#2c3e50}
+main{max-width:900px;margin:20px auto;background:white;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 section{display:none} section.active{display:block}
-li{margin:10px 0;padding:10px;border-left:5px solid #2c3e50;list-style:none;border-radius:4px}
+h2{color:#2c3e50;margin-top:20px}
+ul{list-style:none;padding:0}
+li{margin:10px 0;padding:10px 15px;border-left:5px solid #2c3e50;border-radius:4px;background:#ecf0f1}
 li.important{border-left-color:#e74c3c}
 li.optional{border-left-color:#f39c12}
+.shop-item{display:flex;justify-content:space-between;align-items:center;font-weight:bold}
 </style>
 </head>
 <body>
 <header>
 <h1>Novara RP</h1>
+<p>Benvenuto sul sito ufficiale di Novara RP</p>
 </header>
 <nav>
 <button onclick="show('home')">Home</button>
@@ -27,23 +32,23 @@ li.optional{border-left-color:#f39c12}
 </nav>
 <main>
 <section id="home" class="active">
-<h2>Home</h2>
-<p>Benvenuto su Novara RP! Scopri shop e regole per un RP corretto.</p>
+<h2>🏠 Home</h2>
+<p>Benvenuto su Novara RP! Scopri shop, pacchetti e regole per un RP corretto e divertente.</p>
 </section>
 <section id="shop">
-<h2>Shop Pacchetti</h2>
+<h2>🏪 Shop Pacchetti House</h2>
 <ul>
-<li>Casa: 5.000$</li>
-<li>Villa: 10.000$</li>
+<li class="shop-item">Casa: <span>5.000$</span></li>
+<li class="shop-item">Villa: <span>10.000$</span></li>
 </ul>
 </section>
 <section id="rules">
-<h2>Regole In Game</h2>
+<h2>📜 Regole In Game</h2>
 <ul>
 <li class="optional">⚠️ Sirene solo quando servono</li>
 <li class="optional">⚠️ Guidare bene e fare RP corretto</li>
 <li class="optional">⚠️ Rispetto con tutti</li>
-<li class="optional">🎵 VC con musica ok se non fastidiosa</li>
+<li class="optional">🎵 VC con musica solo se non fastidiosa</li>
 <li class="important">🪖 Lavori come polizia/medico rispettare RP</li>
 <li class="important">🚩 Vietato stopsticks, powergaming, RDM, VDM, crash</li>
 </ul>
